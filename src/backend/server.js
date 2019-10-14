@@ -15,8 +15,8 @@ app.use(cors());
 //app.use(bodyparser.json());
 app.use(express.json());//this is going to allow to parse JSON
 
-const uri = process.env.ATLAS_URI ;//|| "mongodb://admin:gunfer510@ds235078.mlab.com:35078/heroku_btn6zz9h";
-
+//const uri = process.env.ATLAS_URI ;//|| "mongodb://admin:gunfer510@ds235078.mlab.com:35078/heroku_btn6zz9h";
+const uri = "mongodb+srv://admin:gunfer510@clustervolkan-y1wf8.mongodb.net/test?retryWrites=true&w=majority"
 
 let todo = require('./models/todo.model');
 
